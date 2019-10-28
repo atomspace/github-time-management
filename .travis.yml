@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "10"
+install:
+  - npm install
+cache:
+  directories:
+  - node_modules
+script:
+  - npm test
+  - npm run build
+notifications:
+  email:
+    on_pull_requests: false
+    on_success: change
+    on_failure: change
+deploy:
+  provider: releases
+  api_key: "$GITHUB_AUTH_TOKEN"
+  file_glob: true
+  file: dist/*
+  overwrite: true
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: master
