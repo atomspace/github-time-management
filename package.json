@@ -1,0 +1,38 @@
+{
+  "name": "github-time-management",
+  "version": "0.1.0",
+  "description": "Browser extension for a project planning in a GitHub repository",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "neutrino lint",
+    "start": "neutrino start",
+    "build": "neutrino build",
+    "lint": "neutrino lint --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atomspace/github-time-management.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atomspace/github-time-management/issues"
+  },
+  "homepage": "https://github.com/atomspace/github-time-management#readme",
+  "devDependencies": {
+    "@atomspace/eslint": "3.3.0",
+    "@atomspace/webextension": "0.2.2",
+    "neutrino": "8.3.0",
+    "babel-plugin-transform-react-jsx": "6.24.1",
+    "babel-plugin-jsx-pragmatic": "1.0.2",
+    "babel-plugin-transform-class-properties": "6.24.1",
+    "babel-plugin-transform-es2015-classes": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "@neutrinojs/loader-merge": "8.3.0"
+  },
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}
