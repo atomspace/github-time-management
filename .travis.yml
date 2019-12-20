@@ -15,9 +15,9 @@ notifications:
     on_success: change
     on_failure: change
 branches:
-	only:
-	- master
-	- /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+  only:
+  - master
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
 deploy:
   provider: releases
   api_key: "$GITHUB_AUTH_TOKEN"
