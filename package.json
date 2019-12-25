@@ -17,21 +17,23 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/atomspace/github-time-management/issues"
+    "url": "https://github.com/atomspace/github-time-management/issues/25"
   },
   "homepage": "https://github.com/atomspace/github-time-management#readme",
   "devDependencies": {
     "@atomspace/eslint": "3.3.0",
     "@atomspace/webextension": "0.2.2",
-    "neutrino": "8.3.0",
-    "babel-plugin-transform-react-jsx": "6.24.1",
+    "@neutrinojs/loader-merge": "8.3.0",
     "babel-plugin-jsx-pragmatic": "1.0.2",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-es2015-classes": "6.24.1",
+    "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-preset-react": "6.24.1",
-    "@neutrinojs/loader-merge": "8.3.0"
+    "neutrino": "8.3.0"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0"
   }
