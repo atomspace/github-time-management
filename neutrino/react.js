@@ -1,5 +1,6 @@
 let path = require('path');
 
+let svg = require('@atomspace/react/src/loaders/svg');
 let loaderMerge = require('@neutrinojs/loader-merge');
 
 module.exports = function (neutrino) {
@@ -32,6 +33,7 @@ module.exports = function (neutrino) {
 		presets: [require.resolve('babel-preset-react')]
 	};
 
+	neutrino.use(svg);
 	neutrino.use(loaderMerge('compile', 'babel'), reactOptions);
 
 	neutrino.config.module.rule('compile').test(neutrino.regexFromExtensions());

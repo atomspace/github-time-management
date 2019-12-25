@@ -23,6 +23,7 @@
   "devDependencies": {
     "@atomspace/eslint": "3.3.0",
     "@atomspace/webextension": "0.2.2",
+    "@atomspace/react": "0.8.3",
     "neutrino": "8.3.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-plugin-jsx-pragmatic": "1.0.2",
