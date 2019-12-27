@@ -2,7 +2,7 @@
   "name": "github-time-management",
   "version": "0.1.0",
   "description": "Browser extension for a project planning in a GitHub repository",
-  "main": "index.js",
+  "main": "build/index.html",
   "scripts": {
     "pretest": "neutrino lint",
     "start": "neutrino start",
@@ -23,6 +23,7 @@
   "devDependencies": {
     "@atomspace/eslint": "3.3.0",
     "@atomspace/webextension": "0.2.2",
+    "@atomspace/react": "0.8.3",
     "neutrino": "8.3.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-plugin-jsx-pragmatic": "1.0.2",
