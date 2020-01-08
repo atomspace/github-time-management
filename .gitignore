@@ -66,5 +66,6 @@ typings/
 .next
 
 # custom
+package-lock.json
 /build
 /dist
