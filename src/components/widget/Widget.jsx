@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 
+import './widget.css';
+
 export default class Widget extends React.Component {
 	static propTypes = {
 		className: PropTypes.string,
@@ -25,6 +27,7 @@ export default class Widget extends React.Component {
 	}
 
 	componentDidMount () {
+		this.element.classList.add(this.props.className, 'sidebar-section');
 		this.state.portalRootParent.insertBefore(this.element, this.state.portalRoot.nextSibling);
 	}
 
@@ -33,10 +36,10 @@ export default class Widget extends React.Component {
 	}
 
 	render () {
-		let { className, children } = this.props;
+		let { children } = this.props;
 
 		return (
-			<div className={className}>
+			<div>
 				{ReactDOM.createPortal(children, this.element)}
 			</div>
 		);
