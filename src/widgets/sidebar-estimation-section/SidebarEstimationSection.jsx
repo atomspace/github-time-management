@@ -5,21 +5,26 @@ import { Input, Label, Button } from '../../components/form/index';
 
 import './sidebar-estimation-section.css';
 
-export default function SidebarEstimationSection () {
-	return (
-		<form className="js-issue-sidebar-form" aria-label="Make estimations">
-			<details className="details-reset details-overlay select-menu hx_rsm">
-				<summary className="text-bold discussion-sidebar-heading discussion-sidebar-toggle hx_rsm-trigger" aria-haspopup="menu" data-hotkey="a" role="button">
-					<Icon name="trash" className="octicon" />
-					Estimations
-				</summary>
-			</details>
+export default class SidebarEstimationSection extends React.PureComponent {
+	handleClick = () => {
+	};
 
-			<Label className="estimation-field">
-				<Input />
-			</Label>
-			<Button className="btn-sm btn-primary">Save</Button>
-			<Button className="btn-sm">Cancel</Button>
-		</form>
-	);
+	render () {
+		return (
+			<form className="issue-sidebar-form" aria-label="Make estimations">
+				<div className="details-reset details-overlay select-menu hx_rsm">
+					<div className="text-bold discussion-sidebar-heading discussion-sidebar-toggle hx_rsm-trigger" aria-haspopup="menu" data-hotkey="a" role="button">
+						<Icon name="trash" className="octicon" />
+						Estimations
+					</div>
+				</div>
+
+				<Label className="estimation-field">
+					<Input />
+				</Label>
+				<Button className="btn-sm btn-primary" onClick={this.handleClick} type="submit">Save</Button>
+				<Button className="btn-sm">Cancel</Button>
+			</form>
+		);
+	}
 }

@@ -1,12 +1,12 @@
-.js-issue-sidebar-form .octicon {
+.issue-sidebar-form .octicon {
 	float: right;
     color: #959da5;
 }
 
-.js-issue-sidebar-form .estimation-field {
+.issue-sidebar-form .estimation-field {
 	margin-bottom: 6px;
 }
 
-.js-issue-sidebar-form .btn-primary {
+.issue-sidebar-form .btn-primary {
 	margin-right: 8px;
 }
