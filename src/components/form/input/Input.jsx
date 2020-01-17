@@ -27,7 +27,7 @@ export default class Input extends React.PureComponent {
 
 		return (
 			<input
-				className={classnames('input-field', className)}
+				className={classnames('input', className)}
 				name={name}
 				value={value}
 				type={type}
