@@ -24,7 +24,7 @@ export default class Label extends React.PureComponent {
 		} = this.props;
 
 		return (
-			<label className={classnames('input-field', className)}>
+			<label className={classnames('label', className)}>
 				<span className="label-text">{title}</span>
 				{children}
 			</label>
