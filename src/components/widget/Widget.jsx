@@ -31,11 +31,11 @@ export default class Widget extends React.Component {
 			this.element.classList.add(className);
 		});
 
-		this.state.portalRootParent.insertBefore(this.element, this.state.portalRoot.nextSibling);
+		this.portalRootParent.insertBefore(this.element, this.portalRoot.nextSibling);
 	}
 
 	componentWillUnmount () {
-		this.state.portalRootParent.removeChild(this.element);
+		this.portalRootParent.removeChild(this.element);
 	}
 
 	render () {
