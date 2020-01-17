@@ -8,12 +8,18 @@ export default class Button extends React.PureComponent {
 	static propTypes = {
 		className: PropTypes.string,
 		type: PropTypes.string,
-		children: PropTypes.node
+		children: PropTypes.node,
+		onClick: PropTypes.func
 	};
 	static defaultProps = {
 		className: '',
-		type: 'text',
-		children: null
+		type: 'button',
+		children: null,
+		onClick: null
+	};
+
+	handleClick = () => {
+		this.props.onClick();
 	};
 
 	render () {
@@ -23,8 +29,9 @@ export default class Button extends React.PureComponent {
 
 		return (
 			<button
-				className={classnames('input-field', className)}
+				className={classnames('button', className)}
 				type={type}
+				onClick={this.handleClick}
 			>
 				{children}
 			</button>
