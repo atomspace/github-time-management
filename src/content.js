@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Main from './popup/Main';
+import Main from './content/Main';
 
-let componentRoot = document.querySelector('.repository-content .subnav:nth-child(2)');
+let reactRootElement = document.createElement('div');
 
-ReactDOM.render(React.createElement(Main), componentRoot);
+reactRootElement.style.display = 'none';
+document.body.appendChild(reactRootElement);
+
+ReactDOM.render(React.createElement(Main), reactRootElement);

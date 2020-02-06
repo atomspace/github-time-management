@@ -1,0 +1,29 @@
+.issue-sidebar-form .octicon {
+	float: right;
+    color: #959da5;
+}
+
+.issue-sidebar-form .estimation-field {
+	margin-bottom: 6px;
+}
+
+.issue-sidebar-form .primary-button {
+	margin-right: 8px;
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.issue-sidebar-form .secondary-button {
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.issue-sidebar-heading {
+	font-weight: 600;
+	font-size: 12px;
+	color: #586069;
+	padding: 4px 0;
+    margin: -4px 0 4px;
+}

@@ -1,0 +1,31 @@
+.input {
+	display: block;
+	width: 100%;
+    padding: 4px 8px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #24292e;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #d1d5da;
+    border-radius: 3px;
+    outline: none;
+	box-shadow: inset 0 1px 2px rgba(27,31,35,.075);
+	box-sizing: border-box;
+}
+
+.input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+.input:focus {
+	border-color: #2188ff;
+    outline: none;
+    box-shadow: inset 0 1px 2px rgba(27,31,35,.075), 0 0 0 0.2em rgba(3,102,214,.3);
+}
+
+.input:focus:hover {
+	outline: transparent;
+}
