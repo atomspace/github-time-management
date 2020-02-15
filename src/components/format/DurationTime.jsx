@@ -6,27 +6,38 @@ import formatTimeInterval from '../../utils/format-time-interval';
 export default class DurationTime extends React.PureComponent {
 	static propTypes = {
 		className: PropTypes.string,
-		children: PropTypes.node
+		children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
 	};
 
 	static defaultProps = {
 		className: '',
-		children: null
+		children: undefined
 	};
+
+	static format (children) {
+		return formatTimeInterval(children);
+	}
+
+	static unformat () {
+	}
 
 	render () {
 		let { children, className } = this.props;
 
-		children = formatTimeInterval(children);
+		let outputTimeDuration = DurationTime.format(parseInt(children, 10));
 
 		if (className) {
 			return (
 				<span className={className}>
-					{children}
+					{outputTimeDuration}
 				</span>
 			);
 		}
 
-		return ({ children });
+		return (
+			<React.Fragment>
+				{outputTimeDuration}
+			</React.Fragment>
+		);
 	}
 }
