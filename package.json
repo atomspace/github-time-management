@@ -24,8 +24,8 @@
     "@atomspace/eslint": "3.3.0",
     "@atomspace/webextension": "0.2.2",
     "@neutrinojs/loader-merge": "8.3.0",
-	"@atomspace/react": "0.8.3",
-	"neutrino": "8.3.0",
+    "@atomspace/react": "0.8.3",
+    "neutrino": "8.3.0",
     "babel-plugin-transform-react-jsx": "6.24.1",
     "babel-plugin-jsx-pragmatic": "1.0.2",
     "babel-plugin-transform-class-properties": "6.24.1",
@@ -33,9 +33,11 @@
     "babel-preset-react": "6.24.1"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
+    "mobx": "^5.15.4",
+    "mobx-state-tree": "^3.15.0",
     "prop-types": "^15.7.2",
     "react": "16.12.0",
-    "classnames": "^2.2.6",
     "react-dom": "16.12.0"
   }
 }
