@@ -15,7 +15,7 @@ export default class DurationTime extends React.PureComponent {
 	};
 
 	static format (children) {
-		return formatTimeInterval(children);
+		return formatTimeInterval(parseInt(children, 10));
 	}
 
 	static unformat () {
@@ -24,7 +24,7 @@ export default class DurationTime extends React.PureComponent {
 	render () {
 		let { children, className } = this.props;
 
-		let outputTimeDuration = DurationTime.format(parseInt(children, 10));
+		let outputTimeDuration = DurationTime.format(children);
 
 		if (className) {
 			return (
@@ -34,10 +34,6 @@ export default class DurationTime extends React.PureComponent {
 			);
 		}
 
-		return (
-			<React.Fragment>
-				{outputTimeDuration}
-			</React.Fragment>
-		);
+		return outputTimeDuration;
 	}
 }
